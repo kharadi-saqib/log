@@ -1,0 +1,104 @@
+iadsstgapphost01
+*** Found local files:
+***   * Airflow/logs/dag_id=A4_COG_Generator_Worker/run_id=manual__2024-08-26T10:17:54.609206+00:00/task_id=cog_generator_sub_worker/map_index=0/attempt=1.log
+[2024-08-26T10:17:58.485+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: A4_COG_Generator_Worker.cog_generator_sub_worker manual__2024-08-26T10:17:54.609206+00:00 map_index=0 [queued]>
+[2024-08-26T10:17:58.496+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: A4_COG_Generator_Worker.cog_generator_sub_worker manual__2024-08-26T10:17:54.609206+00:00 map_index=0 [queued]>
+[2024-08-26T10:17:58.497+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2024-08-26T10:17:58.520+0000] {taskinstance.py:1382} INFO - Executing <Mapped(_PythonDecoratedOperator): cog_generator_sub_worker> on 2024-08-26 10:17:54.609206+00:00
+[2024-08-26T10:17:58.526+0000] {standard_task_runner.py:57} INFO - Started process 1165239 to run task
+[2024-08-26T10:17:58.529+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'A4_COG_Generator_Worker', 'cog_generator_sub_worker', 'manual__2024-08-26T10:17:54.609206+00:00', '--job-id', '46278', '--raw', '--subdir', '/home/ladsadmin/FGICWebApp/Airflow/dags/a4_cog_generator_worker_dag.py', '--cfg-path', '/tmp/tmpfot_5iol', '--map-index', '0']
+[2024-08-26T10:17:58.532+0000] {standard_task_runner.py:85} INFO - Job 46278: Subtask cog_generator_sub_worker
+[2024-08-26T10:17:58.634+0000] {task_command.py:416} INFO - Running <TaskInstance: A4_COG_Generator_Worker.cog_generator_sub_worker manual__2024-08-26T10:17:54.609206+00:00 map_index=0 [running]> on host iadsstgapphost01
+[2024-08-26T10:17:58.831+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='A4_COG_Generator_Worker' AIRFLOW_CTX_TASK_ID='cog_generator_sub_worker' AIRFLOW_CTX_EXECUTION_DATE='2024-08-26T10:17:54.609206+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-26T10:17:54.609206+00:00'
+[2024-08-26T10:17:58.833+0000] {a4_cog_generator_worker_dag.py:31} INFO - Cog-Generator worker started its work.
+[2024-08-26T10:17:59.155+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Checking if the Item is Eligible to Start CogGeneratorWorker.", "level": "DEBUG", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.163+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Reached at the \u201celigible_item_reader\u201d Method & About to Execute.", "level": "DEBUG", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.167+0000] {_base_logger.py:40} INFO - {"worker": "CogGeneratorWorker", "msg": "Well Done!! Item is Eligible to execute CogGeneratorWorker.", "level": "INFO", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.170+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Now starting CogGeneratorWorker.", "level": "DEBUG", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.173+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Reached at the 'process_started_worker' Method & About to Execute.", "level": "DEBUG", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.177+0000] {_base_logger.py:40} INFO - {"worker": "CogGeneratorWorker", "msg": "Well Done!! CogGeneratorWorker Started.", "level": "INFO", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.183+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Getting File Path of a File from Source Data Table in Database.", "level": "DEBUG", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.186+0000] {_base_logger.py:40} INFO - {"worker": "CogGeneratorWorker", "msg": "Great!! File Path obtained Successfully from Database.", "level": "INFO", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.189+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Getting Target Data object Related to Source Data form Database.", "level": "DEBUG", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.195+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Successfully Got Target Data object from Database.", "level": "DEBUG", "source_data": "utm_moasaic-05.img", "target_data": "/home/ladsadmin/share/stgrasterstore/adf16654-68ba-46da-b623-a9fe26c7202a_2024-08-26_10-17-29.img"}
+[2024-08-26T10:17:59.201+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Need to Create COG for 1 Images.", "level": "DEBUG", "source_data": "utm_moasaic-05.img", "target_data": "/home/ladsadmin/share/stgrasterstore/adf16654-68ba-46da-b623-a9fe26c7202a_2024-08-26_10-17-29.img"}
+[2024-08-26T10:17:59.203+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "[0] Generating COG Path for file and path is: /home/ladsadmin/mnt/Local_Ingester_Folder/adf16654-68ba-46da-b623-a9fe26c7202a_2024-08-26_10-17-29.img", "level": "DEBUG", "source_data": "utm_moasaic-05.img", "target_data": "/home/ladsadmin/share/stgrasterstore/adf16654-68ba-46da-b623-a9fe26c7202a_2024-08-26_10-17-29.img"}
+[2024-08-26T10:17:59.208+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "If GENERATE_COG_ON_LOCAL is True then Generate COG on local machine.", "level": "DEBUG", "source_data": "utm_moasaic-05.img", "target_data": "/home/ladsadmin/share/stgrasterstore/adf16654-68ba-46da-b623-a9fe26c7202a_2024-08-26_10-17-29.img"}
+[2024-08-26T10:17:59.210+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Generating COG on Local Machine.", "level": "DEBUG", "source_data": "utm_moasaic-05.img", "target_data": "/home/ladsadmin/share/stgrasterstore/adf16654-68ba-46da-b623-a9fe26c7202a_2024-08-26_10-17-29.img"}
+[2024-08-26T10:17:59.213+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Generating NAS Drive tiff path.", "level": "DEBUG", "source_data": "utm_moasaic-05.img", "target_data": "/home/ladsadmin/share/stgrasterstore/adf16654-68ba-46da-b623-a9fe26c7202a_2024-08-26_10-17-29.img"}
+[2024-08-26T10:17:59.215+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Server path is: /home/ladsadmin/share/stgrasterstore", "level": "DEBUG", "source_data": "utm_moasaic-05.img", "target_data": "/home/ladsadmin/share/stgrasterstore/adf16654-68ba-46da-b623-a9fe26c7202a_2024-08-26_10-17-29.img"}
+[2024-08-26T10:17:59.217+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "New directory path without month folder: /home/ladsadmin/share/stgrasterstore", "level": "DEBUG", "source_data": "utm_moasaic-05.img", "target_data": "/home/ladsadmin/share/stgrasterstore/adf16654-68ba-46da-b623-a9fe26c7202a_2024-08-26_10-17-29.img"}
+[2024-08-26T10:17:59.221+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Directory already exists: /home/ladsadmin/share/stgrasterstore", "level": "DEBUG", "source_data": "utm_moasaic-05.img", "target_data": "/home/ladsadmin/share/stgrasterstore/adf16654-68ba-46da-b623-a9fe26c7202a_2024-08-26_10-17-29.img"}
+[2024-08-26T10:17:59.223+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "NAS Drive tiff path is: /home/ladsadmin/share/stgrasterstore/adf16654-68ba-46da-b623-a9fe26c7202a_2024-08-26_10-17-29.img", "level": "DEBUG", "source_data": "utm_moasaic-05.img", "target_data": "/home/ladsadmin/share/stgrasterstore/adf16654-68ba-46da-b623-a9fe26c7202a_2024-08-26_10-17-29.img"}
+[2024-08-26T10:17:59.225+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "NAS tiff Directory is:/home/ladsadmin/share/stgrasterstore", "level": "DEBUG", "source_data": "utm_moasaic-05.img", "target_data": "/home/ladsadmin/share/stgrasterstore/adf16654-68ba-46da-b623-a9fe26c7202a_2024-08-26_10-17-29.img"}
+[2024-08-26T10:17:59.229+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "NAS Drive COG path is: /home/ladsadmin/share/stgrasterstore/adf16654-68ba-46da-b623-a9fe26c7202a_2024-08-26_10-17-29_cog.tif", "level": "DEBUG", "source_data": "utm_moasaic-05.img", "target_data": "/home/ladsadmin/share/stgrasterstore/adf16654-68ba-46da-b623-a9fe26c7202a_2024-08-26_10-17-29.img"}
+[2024-08-26T10:17:59.233+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Reached at the \u201cconvert_tiff_to_cog\u201d Method & About to Execute.", "level": "DEBUG", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.236+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Opening tiff file using GDAL. /home/ladsadmin/mnt/Local_Ingester_Folder/adf16654-68ba-46da-b623-a9fe26c7202a_2024-08-26_10-17-29.img", "level": "DEBUG", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.253+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Great!! File Opened Successfully through GDAL.", "level": "DEBUG", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.256+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Checking description.", "level": "DEBUG", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.259+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Description from GDAL: /home/ladsadmin/mnt/Local_Ingester_Folder/adf16654-68ba-46da-b623-a9fe26c7202a_2024-08-26_10-17-29.img", "level": "DEBUG", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.261+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Checking file size.", "level": "DEBUG", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.263+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Extension of Source File Path is: .img", "level": "DEBUG", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.265+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Base name is: /home/ladsadmin/share/stghot1/utm_moasaic-05", "level": "DEBUG", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.267+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Filename is: utm_moasaic-05", "level": "DEBUG", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.269+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Pair tiff paths are: ['/home/ladsadmin/mnt/Local_Ingester_Folder/utm_moasaic-05.ige', '/home/ladsadmin/mnt/Local_Ingester_Folder/utm_moasaic-05.rrd', '/home/ladsadmin/mnt/Local_Ingester_Folder/utm_moasaic-05.rde']", "level": "DEBUG", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.271+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Total size which contains main source file and its associated pair files: 238961434998", "level": "DEBUG", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.273+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "File size is greater than 4GB hence converting to bigtiff format.", "level": "DEBUG", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T10:17:59.276+0000] {_base_logger.py:40} INFO - {"worker": "CogGeneratorWorker", "msg": "About to Generate COG of a File and  COG Path is: /home/ladsadmin/mnt/Local_Ingester_Folder/adf16654-68ba-46da-b623-a9fe26c7202a_2024-08-26_10-17-29_cog.tif", "level": "INFO", "source_data": "utm_moasaic-05.img"}
+[2024-08-26T11:19:41.541+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 221, in execute
+    return_value = super().execute(context)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/ladsadmin/FGICWebApp/Airflow/dags/a4_cog_generator_worker_dag.py", line 37, in cog_generator_sub_worker
+    worker.start(source_data)
+  File "/home/ladsadmin/FGICWebApp/IngestionEngine/workers/cog_generator_worker.py", line 690, in start
+    self.process_started_worker(source_data)
+  File "/home/ladsadmin/FGICWebApp/IngestionEngine/workers/cog_generator_worker.py", line 538, in process_started_worker
+    image.save()
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 990, in _save_table
+    updated = self._do_update(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1054, in _do_update
+    return filtered._update(values) > 0
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1231, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1984, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+[2024-08-26T11:19:42.844+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=A4_COG_Generator_Worker, task_id=cog_generator_sub_worker, map_index=0, execution_date=20240826T101754, start_date=20240826T101758, end_date=20240826T111942
+[2024-08-26T11:19:43.414+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 46278 for task cog_generator_sub_worker (server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+; 1165239)
+[2024-08-26T11:19:43.555+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-08-26T11:19:44.099+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
