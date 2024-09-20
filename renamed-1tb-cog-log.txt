@@ -1,0 +1,71 @@
+iadsstgapphost01
+*** Found local files:
+***   * Airflow/logs/dag_id=A4_COG_Generator_Worker/run_id=manual__2024-09-20T08:42:12.442543+00:00/task_id=cog_generator_sub_worker/map_index=1/attempt=1.log
+[2024-09-20, 08:42:16 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: A4_COG_Generator_Worker.cog_generator_sub_worker manual__2024-09-20T08:42:12.442543+00:00 map_index=1 [queued]>
+[2024-09-20, 08:42:16 UTC] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: A4_COG_Generator_Worker.cog_generator_sub_worker manual__2024-09-20T08:42:12.442543+00:00 map_index=1 [queued]>
+[2024-09-20, 08:42:16 UTC] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2024-09-20, 08:42:16 UTC] {taskinstance.py:1382} INFO - Executing <Mapped(_PythonDecoratedOperator): cog_generator_sub_worker> on 2024-09-20 08:42:12.442543+00:00
+[2024-09-20, 08:42:16 UTC] {standard_task_runner.py:57} INFO - Started process 508619 to run task
+[2024-09-20, 08:42:16 UTC] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'A4_COG_Generator_Worker', 'cog_generator_sub_worker', 'manual__2024-09-20T08:42:12.442543+00:00', '--job-id', '89786', '--raw', '--subdir', '/home/ladsadmin/FGICWebApp/Airflow/dags/a4_cog_generator_worker_dag.py', '--cfg-path', '/tmp/tmpk5hxb6e5', '--map-index', '1']
+[2024-09-20, 08:42:16 UTC] {standard_task_runner.py:85} INFO - Job 89786: Subtask cog_generator_sub_worker
+[2024-09-20, 08:42:16 UTC] {task_command.py:416} INFO - Running <TaskInstance: A4_COG_Generator_Worker.cog_generator_sub_worker manual__2024-09-20T08:42:12.442543+00:00 map_index=1 [running]> on host iadsstgapphost01
+[2024-09-20, 08:42:16 UTC] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='A4_COG_Generator_Worker' AIRFLOW_CTX_TASK_ID='cog_generator_sub_worker' AIRFLOW_CTX_EXECUTION_DATE='2024-09-20T08:42:12.442543+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-20T08:42:12.442543+00:00'
+[2024-09-20, 08:42:16 UTC] {a4_cog_generator_worker_dag.py:31} INFO - Cog-Generator worker started its work.
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Checking if the Item is Eligible to Start CogGeneratorWorker.", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Reached at the \u201celigible_item_reader\u201d Method & About to Execute.", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:40} INFO - {"worker": "CogGeneratorWorker", "msg": "Well Done!! Item is Eligible to execute CogGeneratorWorker.", "level": "INFO", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Now starting CogGeneratorWorker.", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Reached at the 'process_started_worker' Method & About to Execute.", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:40} INFO - {"worker": "CogGeneratorWorker", "msg": "Well Done!! CogGeneratorWorker Started.", "level": "INFO", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Getting File Path of a File from Source Data Table in Database.", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:40} INFO - {"worker": "CogGeneratorWorker", "msg": "Great!! File Path obtained Successfully from Database.", "level": "INFO", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Getting Target Data object Related to Source Data form Database.", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Successfully Got Target Data object from Database.", "level": "DEBUG", "source_data": "uae.img", "target_data": "/home/ladsadmin/share/stgrasterstore/10fdbfda-5a63-4ef2-9049-f05c0b17408d_2024-09-20_08-41-42.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Need to Create COG for 1 Images.", "level": "DEBUG", "source_data": "uae.img", "target_data": "/home/ladsadmin/share/stgrasterstore/10fdbfda-5a63-4ef2-9049-f05c0b17408d_2024-09-20_08-41-42.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "[0] Generating COG Path for file and path is: /home/ladsadmin/mnt/Local_Ingester_Folder/10fdbfda-5a63-4ef2-9049-f05c0b17408d_2024-09-20_08-41-42.img", "level": "DEBUG", "source_data": "uae.img", "target_data": "/home/ladsadmin/share/stgrasterstore/10fdbfda-5a63-4ef2-9049-f05c0b17408d_2024-09-20_08-41-42.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "If GENERATE_COG_ON_LOCAL is True then Generate COG on local machine.", "level": "DEBUG", "source_data": "uae.img", "target_data": "/home/ladsadmin/share/stgrasterstore/10fdbfda-5a63-4ef2-9049-f05c0b17408d_2024-09-20_08-41-42.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Generating COG on Local Machine.", "level": "DEBUG", "source_data": "uae.img", "target_data": "/home/ladsadmin/share/stgrasterstore/10fdbfda-5a63-4ef2-9049-f05c0b17408d_2024-09-20_08-41-42.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "base_path when GENERATE_COG_ON_LOCAL is yes: /home/ladsadmin/mnt/Local_Ingester_Folder", "level": "DEBUG", "source_data": "uae.img", "target_data": "/home/ladsadmin/share/stgrasterstore/10fdbfda-5a63-4ef2-9049-f05c0b17408d_2024-09-20_08-41-42.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "New directory path without month folder: /home/ladsadmin/mnt/Local_Ingester_Folder", "level": "DEBUG", "source_data": "uae.img", "target_data": "/home/ladsadmin/share/stgrasterstore/10fdbfda-5a63-4ef2-9049-f05c0b17408d_2024-09-20_08-41-42.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Directory already exists: /home/ladsadmin/mnt/Local_Ingester_Folder", "level": "DEBUG", "source_data": "uae.img", "target_data": "/home/ladsadmin/share/stgrasterstore/10fdbfda-5a63-4ef2-9049-f05c0b17408d_2024-09-20_08-41-42.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Reached at the \u201cconvert_tiff_to_cog\u201d Method & About to Execute.", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Opening tiff file using GDAL. /home/ladsadmin/mnt/Local_Ingester_Folder/10fdbfda-5a63-4ef2-9049-f05c0b17408d_2024-09-20_08-41-42.img", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Great!! File Opened Successfully through GDAL.", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Checking description.", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Description from GDAL: /home/ladsadmin/mnt/Local_Ingester_Folder/10fdbfda-5a63-4ef2-9049-f05c0b17408d_2024-09-20_08-41-42.img", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Checking file size.", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Extension of Source File Path is: .img", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Base name is: /home/ladsadmin/share/stghot1/uae", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Filename is: uae", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Pair tiff paths are: ['/home/ladsadmin/mnt/Local_Ingester_Folder/uae.ige', '/home/ladsadmin/mnt/Local_Ingester_Folder/uae.rrd', '/home/ladsadmin/mnt/Local_Ingester_Folder/uae.rde']", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Total size which contains main source file and its associated pair files: 1260428912441", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "File size is greater than 4GB hence converting to bigtiff format.", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:17 UTC] {_base_logger.py:40} INFO - {"worker": "CogGeneratorWorker", "msg": "About to Generate COG of a File and  COG Path is: /home/ladsadmin/mnt/Local_Ingester_Folder/10fdbfda-5a63-4ef2-9049-f05c0b17408d_2024-09-20_08-41-42_cog.tif", "level": "INFO", "source_data": "uae.img"}
+[2024-09-20, 08:42:22 UTC] {libgdal.py:128} ERROR - GDAL_ERROR 3: b'Failed to read block validity map.'
+[2024-09-20, 08:42:22 UTC] {libgdal.py:128} ERROR - GDAL_ERROR 1: b'IReadBlock failed at X offset 0, Y offset 0: Failed to read block validity map.'
+[2024-09-20, 08:42:27 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "output_ds: None", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:27 UTC] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "input_ds: <osgeo.gdal.Dataset; proxy of <Swig Object of type 'GDALDatasetShadow *' at 0x7f43861b7870> >", "level": "DEBUG", "source_data": "uae.img"}
+[2024-09-20, 08:42:27 UTC] {_base_logger.py:118} ERROR - {"worker": "CogGeneratorWorker", "msg": "Oops!! Error has Occured while generating the COG.", "level": "ERROR", "source_data": "uae.img"}
+[2024-09-20, 08:42:27 UTC] {_base_logger.py:40} INFO - {"worker": "CogGeneratorWorker", "msg": "DownloadURL Generated Successfully and URL is:https://iadsweb.fgic.gov.ae/stgrasterstore/10fdbfda-5a63-4ef2-9049-f05c0b17408d_2024-09-20_08-41-42.img", "level": "INFO", "source_data": "uae.img", "target_data": "/home/ladsadmin/share/stgrasterstore/10fdbfda-5a63-4ef2-9049-f05c0b17408d_2024-09-20_08-41-42.img"}
+[2024-09-20, 08:42:27 UTC] {_base_logger.py:40} INFO - {"worker": "CogGeneratorWorker", "msg": "VisualizationURL Generated Successfully and URL is:https://iadsweb.fgic.gov.ae/stgrasterstore/10fdbfda-5a63-4ef2-9049-f05c0b17408d_2024-09-20_08-41-42_cog.tif", "level": "INFO", "source_data": "uae.img", "target_data": "/home/ladsadmin/share/stgrasterstore/10fdbfda-5a63-4ef2-9049-f05c0b17408d_2024-09-20_08-41-42.img"}
+[2024-09-20, 08:42:27 UTC] {_base_logger.py:40} INFO - {"worker": "CogGeneratorWorker", "msg": "Checking if the COG of a File is Created Successfully or not.", "level": "INFO", "source_data": "uae.img", "target_data": "/home/ladsadmin/share/stgrasterstore/10fdbfda-5a63-4ef2-9049-f05c0b17408d_2024-09-20_08-41-42.img"}
+[2024-09-20, 08:42:27 UTC] {_base_logger.py:118} ERROR - {"worker": "CogGeneratorWorker", "msg": "CogGeneratorWorker Failed & COG might not be Created.", "level": "ERROR", "source_data": "uae.img", "target_data": "/home/ladsadmin/share/stgrasterstore/10fdbfda-5a63-4ef2-9049-f05c0b17408d_2024-09-20_08-41-42.img"}
+[2024-09-20, 08:42:27 UTC] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 221, in execute
+    return_value = super().execute(context)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/ladsadmin/FGICWebApp/Airflow/dags/a4_cog_generator_worker_dag.py", line 37, in cog_generator_sub_worker
+    worker.start(source_data)
+  File "/home/ladsadmin/FGICWebApp/IngestionEngine/workers/cog_generator_worker.py", line 588, in start
+    self.process_started_worker(source_data)
+  File "/home/ladsadmin/FGICWebApp/IngestionEngine/workers/cog_generator_worker.py", line 571, in process_started_worker
+    raise ValueError("Error.COG might not be Created.")
+ValueError: Error.COG might not be Created.
+[2024-09-20, 08:42:27 UTC] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=A4_COG_Generator_Worker, task_id=cog_generator_sub_worker, map_index=1, execution_date=20240920T084212, start_date=20240920T084216, end_date=20240920T084227
+[2024-09-20, 08:42:27 UTC] {standard_task_runner.py:104} ERROR - Failed to execute job 89786 for task cog_generator_sub_worker (Error.COG might not be Created.; 508619)
+[2024-09-20, 08:42:27 UTC] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-09-20, 08:42:27 UTC] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
