@@ -1,0 +1,66 @@
+import os
+from osgeo import gdal
+
+# Define the list of expected auxiliary files (if applicable)
+ASSOCIATED_EXTENSIONS = ['.aux.xml', '.rrd', '.ovr', '.xml']  # Add other extensions if necessary
+
+def check_metadata_filename(file_path):
+    # Open the dataset using GDAL
+    dataset = gdal.Open(file_path)
+    
+    if not dataset:
+        print(f"Error: Could not open {file_path}")
+        return False
+
+    # Get the internal metadata (file description might include the filename in some cases)
+    metadata = dataset.GetMetadata()
+    
+    # Fetch the actual file name
+    actual_file_name = os.path.basename(file_path)
+    
+    # Some formats store the file name in metadata, but not all. Here we check 'DESCRIPTION' or similar fields.
+    # Adjust the key if necessary for specific file formats
+    internal_name = metadata.get('DESCRIPTION', None)
+    
+    if internal_name and internal_name != actual_file_name:
+        print(f"Warning: Internal metadata name '{internal_name}' does not match the file name '{actual_file_name}'.")
+        return False
+    else:
+        print(f"Internal metadata name matches the file name: {actual_file_name}")
+    
+    return True
+
+def check_associated_files(file_path):
+    # Check if all expected auxiliary files are present
+    base_file_name = os.path.splitext(file_path)[0]
+    all_files_present = True
+    
+    for ext in ASSOCIATED_EXTENSIONS:
+        associated_file = base_file_name + ext
+        if not os.path.exists(associated_file):
+            print(f"Warning: Associated file '{associated_file}' is missing.")
+            all_files_present = False
+        else:
+            print(f"Associated file '{associated_file}' is present.")
+    
+    return all_files_present
+
+def validate_file_for_cog(file_path):
+    # Check if file exists
+    if not os.path.exists(file_path):
+        print(f"Error: File {file_path} does not exist.")
+        return False
+    
+    # Check metadata consistency and associated files
+    metadata_check = check_metadata_filename(file_path)
+    associated_files_check = check_associated_files(file_path)
+
+    # Return True if all validations pass
+    return metadata_check and associated_files_check
+
+# Example usage
+file_to_validate = '/path/to/your/raster.img'
+if validate_file_for_cog(file_to_validate):
+    print("File is ready for COG generation.")
+else:
+    print("File validation failed. Please resolve the above issues before proceeding.")
