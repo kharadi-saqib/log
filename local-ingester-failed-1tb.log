@@ -1,0 +1,169 @@
+iadsstgapphost01
+*** Found local files:
+***   * Airflow/logs/dag_id=A3_Local_Ingestor_Worker/run_id=manual__2024-09-26T07:23:24.351971+00:00/task_id=ingestor_sub_worker/map_index=0/attempt=1.log
+[2024-09-26T07:23:28.431+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: A3_Local_Ingestor_Worker.ingestor_sub_worker manual__2024-09-26T07:23:24.351971+00:00 map_index=0 [queued]>
+[2024-09-26T07:23:28.443+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: A3_Local_Ingestor_Worker.ingestor_sub_worker manual__2024-09-26T07:23:24.351971+00:00 map_index=0 [queued]>
+[2024-09-26T07:23:28.443+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2024-09-26T07:23:28.461+0000] {taskinstance.py:1382} INFO - Executing <Mapped(_PythonDecoratedOperator): ingestor_sub_worker> on 2024-09-26 07:23:24.351971+00:00
+[2024-09-26T07:23:28.469+0000] {standard_task_runner.py:57} INFO - Started process 1206915 to run task
+[2024-09-26T07:23:28.477+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'A3_Local_Ingestor_Worker', 'ingestor_sub_worker', 'manual__2024-09-26T07:23:24.351971+00:00', '--job-id', '102621', '--raw', '--subdir', '/home/ladsadmin/FGICWebApp/Airflow/dags/a3_ingestor_worker_dag.py', '--cfg-path', '/tmp/tmpc62hde3k', '--map-index', '0']
+[2024-09-26T07:23:28.482+0000] {standard_task_runner.py:85} INFO - Job 102621: Subtask ingestor_sub_worker
+[2024-09-26T07:23:28.561+0000] {task_command.py:416} INFO - Running <TaskInstance: A3_Local_Ingestor_Worker.ingestor_sub_worker manual__2024-09-26T07:23:24.351971+00:00 map_index=0 [running]> on host iadsstgapphost01
+[2024-09-26T07:23:28.714+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='A3_Local_Ingestor_Worker' AIRFLOW_CTX_TASK_ID='ingestor_sub_worker' AIRFLOW_CTX_EXECUTION_DATE='2024-09-26T07:23:24.351971+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-26T07:23:24.351971+00:00'
+[2024-09-26T07:23:28.715+0000] {a3_ingestor_worker_dag.py:31} INFO - Local Ingester worker started its work.
+[2024-09-26T07:23:29.029+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Checking if the Item is Eligible to Start LocalIngesterWorker.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.034+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Reached at the 'eligible_item_reader' Method & About to Execute.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.036+0000] {_base_logger.py:40} INFO - {"worker": "LocalIngesterWorker", "msg": "Well Done!! Item is Eligible to execute LocalIngesterWorker.", "level": "INFO", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.038+0000] {_base_logger.py:40} INFO - {"worker": "LocalIngesterWorker", "msg": "Now Starting LocalIngesterWorker.", "level": "INFO", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.039+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Reached at the 'process_started_worker' Method & About to Execute.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.041+0000] {_base_logger.py:40} INFO - {"worker": "LocalIngesterWorker", "msg": "Well Done!! LocalIngesterWorker Started.", "level": "INFO", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.045+0000] {_base_logger.py:40} INFO - {"worker": "LocalIngesterWorker", "msg": "Obtaining Metadata of a File.", "level": "INFO", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.046+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Fetching Metadata with Rasterio.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.048+0000] {_base_logger.py:40} INFO - {"worker": "LocalIngesterWorker", "msg": "Fetching Metadata.", "level": "INFO", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.050+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Getting Metadata with Rasterio.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.052+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Searching if File exists at Specific Location.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.054+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Rasterio About to Read the Files to Retrieve the Metadata.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.469+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Rasterio Started Reading the Files.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.473+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Checking Raster Dataset whether it has CRS assigned or defined.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.476+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Create a CRS object Using the Information From dataset.crs.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.480+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Checking if the CRS object exists and if it has an EPSG code Associated with it.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.482+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Getting the EPSG code from the CRS object.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.484+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Obtained Number of pixels: 730697", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.486+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Obtained Number of layers: 445189", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.489+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Obtained Horizontal Resolution: 9.589166666666666e-06", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.492+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Transforming extent to EPSG: 4326", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.494+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Obtained extent of a file: SRID=4326;POLYGON ((50.62530517578125 22.61449236755208, 57.63208049161458 22.61449236755208, 57.63208049161458 26.88348388671875, 50.62530517578125 26.88348388671875, 50.62530517578125 22.61449236755208)).", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.497+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Well Done!! Metadata obtained Successfully from Rasterio: {'EpsgCode': 4326, 'NumPixels': 730697, 'NumLayers': 445189, 'HorizontalResolution': 9.589166666666666e-06, 'Extent': <Polygon object at 0x7f82e2fe4a10>}.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.499+0000] {_base_logger.py:40} INFO - {"worker": "LocalIngesterWorker", "msg": "Metadata fetched: {'EpsgCode': 4326, 'NumPixels': 730697, 'NumLayers': 445189, 'HorizontalResolution': 9.589166666666666e-06, 'Extent': <Polygon object at 0x7f82e2fe4a10>}.", "level": "INFO", "source_data": "UAE_2019_1m.img", "file": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.503+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Getting Target data which is Related to Source Data. ", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T07:23:29.506+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Checking if Business Metadata is exists in Database or not.", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T07:23:29.521+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Creating new Business Metadata object for a Target Data.", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T07:23:29.528+0000] {_base_logger.py:40} INFO - {"worker": "LocalIngesterWorker", "msg": "Metadata of a File Added in Database Successfully.", "level": "INFO", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T07:23:29.530+0000] {_base_logger.py:40} INFO - {"worker": "LocalIngesterWorker", "msg": "Source Data File Path is: /home/ladsadmin/share/stghot1/UAE_2019_1m.img", "level": "INFO", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T07:23:29.532+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Created Possible Excel and CSV File Paths for Source Data: ['/home/ladsadmin/share/stghot1/UAE_2019_1m_img.xlsx', '/home/ladsadmin/share/stghot1/UAE_2019_1m_img.xls', '/home/ladsadmin/share/stghot1/UAE_2019_1m_img.csv']", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T07:23:29.534+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Checking if any of the Excel/CSV file paths exists in the hot folder.", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T07:23:29.536+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Checking if we found a Valid Excel/CSV file path.", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T07:23:29.538+0000] {_base_logger.py:92} WARNING - {"worker": "LocalIngesterWorker", "msg": "Oops!! Excel File might not be Exist.", "level": "WARNING", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T07:23:29.541+0000] {_base_logger.py:40} INFO - {"worker": "LocalIngesterWorker", "msg": "Starting Copying Process of a File to Destination Folder.", "level": "INFO", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T07:23:29.543+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Obtaining Source File Path from Source Data Table.", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T07:23:29.549+0000] {logging_mixin.py:154} INFO - Base Target ID:  3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49
+[2024-09-26T07:23:29.549+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Target ID uuid ext: 3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T07:23:29.551+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Extension of Source File Path is: .img", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T07:23:29.553+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Checking if extension is related to pair files.", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T07:23:29.555+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Base name is: /home/ladsadmin/share/stghot1/UAE_2019_1m", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T07:23:29.558+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Filename is: UAE_2019_1m", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T07:23:29.559+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Adding pair file to copy 2: /home/ladsadmin/share/stghot1/UAE_2019_1m.ige -> /home/ladsadmin/share/stgrasterstore/UAE_2019_1m.ige", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T07:23:29.561+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Renaming and adding pair file to copy: /home/ladsadmin/share/stghot1/UAE_2019_1m.ige -> /home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.ige", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T07:23:29.564+0000] {_base_logger.py:40} INFO - {"worker": "LocalIngesterWorker", "msg": "Copying files on LOCAL INGESTED FOLDER.", "level": "INFO", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img", "destination_path": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T07:23:29.566+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "New directory path without month: /home/ladsadmin/mnt/Local_Ingester_Folder", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-09-26T07:23:29.570+0000] {_base_logger.py:66} DEBUG - {"worker": "LocalIngesterWorker", "msg": "Local Destination Path is: /home/ladsadmin/mnt/Local_Ingester_Folder/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.ige", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T08:26:33.264+0000] {_base_logger.py:40} INFO - {"worker": "LocalIngesterWorker", "msg": "Copied /home/ladsadmin/share/stghot1/UAE_2019_1m.ige to /home/ladsadmin/mnt/Local_Ingester_Folder/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.ige with output: [{'source': '/home/ladsadmin/share/stghot1/UAE_2019_1m.ige', 'destination': '/home/ladsadmin/mnt/Local_Ingester_Folder/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.ige', 'return_code': 0, 'stdout': 'Copying from /home/ladsadmin/share/stghot1/UAE_2019_1m.ige to /home/ladsadmin/mnt/Local_Ingester_Folder/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.ige\\n\\nreal\\t63m3.678s\\nuser\\t0m2.119s\\nsys\\t20m32.277s\\n', 'stderr': ''}]", "level": "INFO", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T08:26:33.314+0000] {_base_logger.py:118} ERROR - {"worker": "LocalIngesterWorker", "msg": "Error while Getting Destination Path from Target Data: server closed the connection unexpectedly\n\tThis probably means the server terminated abnormally\n\tbefore or while processing the request.\n and Traceback (most recent call last):\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py\", line 89, in _execute\n    return self.cursor.execute(sql, params)\npsycopg2.OperationalError: server closed the connection unexpectedly\n\tThis probably means the server terminated abnormally\n\tbefore or while processing the request.\n\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/ladsadmin/FGICWebApp/IngestionEngine/workers/local_ingester_worker.py\", line 964, in process_started_worker\n    log(\n  File \"/home/ladsadmin/FGICWebApp/IngestionEngine/workers/_base_logger.py\", line 41, in log\n    IngestionLogs.objects.create(\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/query.py\", line 658, in create\n    obj.save(force_insert=True, using=self.db)\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py\", line 814, in save\n    self.save_base(\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py\", line 877, in save_base\n    updated = self._save_table(\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py\", line 1020, in _save_table\n    results = self._do_insert(\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py\", line 1061, in _do_insert\n    return manager._insert(\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/query.py\", line 1805, in _insert\n    return query.get_compiler(using=using).execute_sql(returning_fields)\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py\", line 1822, in execute_sql\n    cursor.execute(sql, params)\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py\", line 102, in execute\n    return super().execute(sql, params)\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py\", line 67, in execute\n    return self._execute_with_wrappers(\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py\", line 80, in _execute_with_wrappers\n    return executor(sql, params, many, context)\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py\", line 84, in _execute\n    with self.db.wrap_database_errors:\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/utils.py\", line 91, in __exit__\n    raise dj_exc_value.with_traceback(traceback) from exc_value\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py\", line 89, in _execute\n    return self.cursor.execute(sql, params)\ndjango.db.utils.OperationalError: server closed the connection unexpectedly\n\tThis probably means the server terminated abnormally\n\tbefore or while processing the request.\n\n", "level": "ERROR", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/3e092819-0462-4d4d-96bb-95b292d05957_2024-09-26_07-22-49.img"}
+[2024-09-26T08:26:33.319+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/IngestionEngine/workers/local_ingester_worker.py", line 964, in process_started_worker
+    log(
+  File "/home/ladsadmin/FGICWebApp/IngestionEngine/workers/_base_logger.py", line 41, in log
+    IngestionLogs.objects.create(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/base/base.py", line 308, in _cursor
+    return self._prepare_cursor(self.create_cursor(name))
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/postgresql/base.py", line 330, in create_cursor
+    cursor = self.connection.cursor()
+psycopg2.InterfaceError: connection already closed
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 221, in execute
+    return_value = super().execute(context)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/ladsadmin/FGICWebApp/Airflow/dags/a3_ingestor_worker_dag.py", line 37, in ingestor_sub_worker
+    worker.start(source_data)
+  File "/home/ladsadmin/FGICWebApp/IngestionEngine/workers/local_ingester_worker.py", line 1472, in start
+    self.process_started_worker(source_data)
+  File "/home/ladsadmin/FGICWebApp/IngestionEngine/workers/local_ingester_worker.py", line 1085, in process_started_worker
+    log(
+  File "/home/ladsadmin/FGICWebApp/IngestionEngine/workers/_base_logger.py", line 119, in log
+    IngestionLogs.objects.create(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1820, in execute_sql
+    with self.connection.cursor() as cursor:
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/base/base.py", line 330, in cursor
+    return self._cursor()
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/base/base.py", line 307, in _cursor
+    with self.wrap_database_errors:
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/base/base.py", line 308, in _cursor
+    return self._prepare_cursor(self.create_cursor(name))
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/postgresql/base.py", line 330, in create_cursor
+    cursor = self.connection.cursor()
+django.db.utils.InterfaceError: connection already closed
+[2024-09-26T08:26:33.377+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=A3_Local_Ingestor_Worker, task_id=ingestor_sub_worker, map_index=0, execution_date=20240926T072324, start_date=20240926T072328, end_date=20240926T082633
+[2024-09-26T08:26:33.410+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 102621 for task ingestor_sub_worker (connection already closed; 1206915)
+[2024-09-26T08:26:33.448+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-09-26T08:26:33.487+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
