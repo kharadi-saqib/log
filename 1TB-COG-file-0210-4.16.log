@@ -1,0 +1,151 @@
+iadsstgapphost01
+*** Found local files:
+***   * Airflow/logs/dag_id=A4_COG_Generator_Worker/run_id=manual__2024-10-02T08:51:04.409982+00:00/task_id=cog_generator_sub_worker/map_index=0/attempt=1.log
+[2024-10-02T08:51:10.995+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: A4_COG_Generator_Worker.cog_generator_sub_worker manual__2024-10-02T08:51:04.409982+00:00 map_index=0 [queued]>
+[2024-10-02T08:51:11.004+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: A4_COG_Generator_Worker.cog_generator_sub_worker manual__2024-10-02T08:51:04.409982+00:00 map_index=0 [queued]>
+[2024-10-02T08:51:11.004+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2024-10-02T08:51:11.016+0000] {taskinstance.py:1382} INFO - Executing <Mapped(_PythonDecoratedOperator): cog_generator_sub_worker> on 2024-10-02 08:51:04.409982+00:00
+[2024-10-02T08:51:11.021+0000] {standard_task_runner.py:57} INFO - Started process 680294 to run task
+[2024-10-02T08:51:11.029+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'A4_COG_Generator_Worker', 'cog_generator_sub_worker', 'manual__2024-10-02T08:51:04.409982+00:00', '--job-id', '114740', '--raw', '--subdir', '/home/ladsadmin/FGICWebApp/Airflow/dags/a4_cog_generator_worker_dag.py', '--cfg-path', '/tmp/tmp59oombc_', '--map-index', '0']
+[2024-10-02T08:51:11.036+0000] {standard_task_runner.py:85} INFO - Job 114740: Subtask cog_generator_sub_worker
+[2024-10-02T08:51:11.124+0000] {task_command.py:416} INFO - Running <TaskInstance: A4_COG_Generator_Worker.cog_generator_sub_worker manual__2024-10-02T08:51:04.409982+00:00 map_index=0 [running]> on host iadsstgapphost01
+[2024-10-02T08:51:11.266+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='A4_COG_Generator_Worker' AIRFLOW_CTX_TASK_ID='cog_generator_sub_worker' AIRFLOW_CTX_EXECUTION_DATE='2024-10-02T08:51:04.409982+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-02T08:51:04.409982+00:00'
+[2024-10-02T08:51:11.267+0000] {a4_cog_generator_worker_dag.py:33} INFO - Cog-Generator worker started its work.
+[2024-10-02T08:51:11.580+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Checking if the Item is Eligible to Start CogGeneratorWorker.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.586+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Reached at the \u201celigible_item_reader\u201d Method & About to Execute.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.589+0000] {_base_logger.py:40} INFO - {"worker": "CogGeneratorWorker", "msg": "Well Done!! Item is Eligible to execute CogGeneratorWorker.", "level": "INFO", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.591+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Now starting CogGeneratorWorker.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.593+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Reached at the 'process_started_worker' Method & About to Execute.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.595+0000] {_base_logger.py:40} INFO - {"worker": "CogGeneratorWorker", "msg": "Well Done!! CogGeneratorWorker Started.", "level": "INFO", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.600+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Getting File Path of a File from Source Data Table in Database.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.602+0000] {_base_logger.py:40} INFO - {"worker": "CogGeneratorWorker", "msg": "Great!! File Path obtained Successfully from Database.", "level": "INFO", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.604+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Getting Target Data object Related to Source Data form Database.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.608+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Successfully Got Target Data object from Database.", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/ff1a8215-2c6f-4185-a23c-5b0eae08b064_2024-10-01_05-21-39.img"}
+[2024-10-02T08:51:11.613+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Need to Create COG for 1 Images.", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/ff1a8215-2c6f-4185-a23c-5b0eae08b064_2024-10-01_05-21-39.img"}
+[2024-10-02T08:51:11.615+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "[0] Generating COG Path for file and path is: /home/ladsadmin/mnt/Local_Ingester_Folder/ff1a8215-2c6f-4185-a23c-5b0eae08b064_2024-10-01_05-21-39.img", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/ff1a8215-2c6f-4185-a23c-5b0eae08b064_2024-10-01_05-21-39.img"}
+[2024-10-02T08:51:11.619+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "If GENERATE_COG_ON_LOCAL is True then Generate COG on local machine.", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/ff1a8215-2c6f-4185-a23c-5b0eae08b064_2024-10-01_05-21-39.img"}
+[2024-10-02T08:51:11.622+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Generating COG on Local Machine.", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/ff1a8215-2c6f-4185-a23c-5b0eae08b064_2024-10-01_05-21-39.img"}
+[2024-10-02T08:51:11.624+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "base_path when GENERATE_COG_ON_LOCAL is yes: /home/ladsadmin/mnt/Local_Ingester_Folder", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/ff1a8215-2c6f-4185-a23c-5b0eae08b064_2024-10-01_05-21-39.img"}
+[2024-10-02T08:51:11.626+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "New directory path without month folder: /home/ladsadmin/mnt/Local_Ingester_Folder", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/ff1a8215-2c6f-4185-a23c-5b0eae08b064_2024-10-01_05-21-39.img"}
+[2024-10-02T08:51:11.628+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Directory already exists: /home/ladsadmin/mnt/Local_Ingester_Folder", "level": "DEBUG", "source_data": "UAE_2019_1m.img", "target_data": "/home/ladsadmin/share/stgrasterstore/ff1a8215-2c6f-4185-a23c-5b0eae08b064_2024-10-01_05-21-39.img"}
+[2024-10-02T08:51:11.634+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Reached at the \u201cconvert_tiff_to_cog\u201d Method & About to Execute.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.636+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Opening tiff file using GDAL. /home/ladsadmin/mnt/Local_Ingester_Folder/ff1a8215-2c6f-4185-a23c-5b0eae08b064_2024-10-01_05-21-39.img", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.661+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Great!! File Opened Successfully through GDAL.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.664+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Checking description.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.667+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Description from GDAL: /home/ladsadmin/mnt/Local_Ingester_Folder/ff1a8215-2c6f-4185-a23c-5b0eae08b064_2024-10-01_05-21-39.img", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.669+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Checking file size.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.671+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Extension of Source File Path is: .img", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.673+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Base name is: /home/ladsadmin/share/stghot1/UAE_2019_1m", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.675+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Filename is: UAE_2019_1m", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.676+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Pair tiff paths are: ['/home/ladsadmin/mnt/Local_Ingester_Folder/UAE_2019_1m.ige', '/home/ladsadmin/mnt/Local_Ingester_Folder/UAE_2019_1m.rrd', '/home/ladsadmin/mnt/Local_Ingester_Folder/UAE_2019_1m.rde']", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.678+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "Total size which contains main source file and its associated pair files: 34871", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.680+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "File size is less than 4GB.", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T08:51:11.682+0000] {_base_logger.py:40} INFO - {"worker": "CogGeneratorWorker", "msg": "About to Generate COG of a File and  COG Path is: /home/ladsadmin/mnt/Local_Ingester_Folder/ff1a8215-2c6f-4185-a23c-5b0eae08b064_2024-10-01_05-21-39_cog.tif", "level": "INFO", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T10:27:38.986+0000] {_base_logger.py:66} DEBUG - {"worker": "CogGeneratorWorker", "msg": "output_ds: <osgeo.gdal.Dataset; proxy of <Swig Object of type 'GDALDatasetShadow *' at 0x7f5d0b1bb030> >", "level": "DEBUG", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T10:43:18.678+0000] {_base_logger.py:118} ERROR - {"worker": "CogGeneratorWorker", "msg": "Oops!! Unfortunatly, Found an Error again while Generating COG file and error is: could not receive data from server: Connection timed out\n and Traceback (most recent call last):\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py\", line 89, in _execute\n    return self.cursor.execute(sql, params)\npsycopg2.OperationalError: could not receive data from server: Connection timed out\n\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/ladsadmin/FGICWebApp/IngestionEngine/workers/cog_generator_worker.py\", line 259, in convert_tiff_to_cog\n    log(\n  File \"/home/ladsadmin/FGICWebApp/IngestionEngine/workers/_base_logger.py\", line 67, in log\n    IngestionLogs.objects.create(\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/query.py\", line 658, in create\n    obj.save(force_insert=True, using=self.db)\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py\", line 814, in save\n    self.save_base(\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py\", line 877, in save_base\n    updated = self._save_table(\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py\", line 1020, in _save_table\n    results = self._do_insert(\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py\", line 1061, in _do_insert\n    return manager._insert(\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/query.py\", line 1805, in _insert\n    return query.get_compiler(using=using).execute_sql(returning_fields)\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py\", line 1822, in execute_sql\n    cursor.execute(sql, params)\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py\", line 102, in execute\n    return super().execute(sql, params)\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py\", line 67, in execute\n    return self._execute_with_wrappers(\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py\", line 80, in _execute_with_wrappers\n    return executor(sql, params, many, context)\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py\", line 84, in _execute\n    with self.db.wrap_database_errors:\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/utils.py\", line 91, in __exit__\n    raise dj_exc_value.with_traceback(traceback) from exc_value\n  File \"/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py\", line 89, in _execute\n    return self.cursor.execute(sql, params)\ndjango.db.utils.OperationalError: could not receive data from server: Connection timed out\n\n", "level": "ERROR", "source_data": "UAE_2019_1m.img"}
+[2024-10-02T10:43:18.683+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.OperationalError: could not receive data from server: Connection timed out
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/IngestionEngine/workers/cog_generator_worker.py", line 259, in convert_tiff_to_cog
+    log(
+  File "/home/ladsadmin/FGICWebApp/IngestionEngine/workers/_base_logger.py", line 67, in log
+    IngestionLogs.objects.create(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.OperationalError: could not receive data from server: Connection timed out
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/base/base.py", line 308, in _cursor
+    return self._prepare_cursor(self.create_cursor(name))
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/postgresql/base.py", line 330, in create_cursor
+    cursor = self.connection.cursor()
+psycopg2.InterfaceError: connection already closed
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/airflow/decorators/base.py", line 221, in execute
+    return_value = super().execute(context)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/ladsadmin/FGICWebApp/Airflow/dags/a4_cog_generator_worker_dag.py", line 39, in cog_generator_sub_worker
+    worker.start(source_data)
+  File "/home/ladsadmin/FGICWebApp/IngestionEngine/workers/cog_generator_worker.py", line 588, in start
+    self.process_started_worker(source_data)
+  File "/home/ladsadmin/FGICWebApp/IngestionEngine/workers/cog_generator_worker.py", line 470, in process_started_worker
+    image.IsCOGGenerated = self.convert_tiff_to_cog(
+  File "/home/ladsadmin/FGICWebApp/IngestionEngine/workers/cog_generator_worker.py", line 282, in convert_tiff_to_cog
+    log(
+  File "/home/ladsadmin/FGICWebApp/IngestionEngine/workers/_base_logger.py", line 119, in log
+    IngestionLogs.objects.create(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1820, in execute_sql
+    with self.connection.cursor() as cursor:
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/base/base.py", line 330, in cursor
+    return self._cursor()
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/base/base.py", line 307, in _cursor
+    with self.wrap_database_errors:
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/base/base.py", line 308, in _cursor
+    return self._prepare_cursor(self.create_cursor(name))
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/django/db/backends/postgresql/base.py", line 330, in create_cursor
+    cursor = self.connection.cursor()
+django.db.utils.InterfaceError: connection already closed
+[2024-10-02T10:43:18.717+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=A4_COG_Generator_Worker, task_id=cog_generator_sub_worker, map_index=0, execution_date=20241002T085104, start_date=20241002T085110, end_date=20241002T104318
+[2024-10-02T10:43:18.744+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 114740 for task cog_generator_sub_worker (connection already closed; 680294)
+[2024-10-02T10:43:18.845+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-10-02T10:43:18.886+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
