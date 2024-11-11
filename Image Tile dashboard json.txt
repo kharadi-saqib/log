@@ -1,0 +1,1752 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 98,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "-- Dashboard --"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Satellite Image Tile ID"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "green",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 4,
+        "x": 0,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "/^Satellite Image Tile ID$/",
+          "values": false
+        },
+        "text": {
+          "valueSize": 15
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "-- Dashboard --"
+          },
+          "panelId": 3,
+          "refId": "A"
+        }
+      ],
+      "title": "Satellite Image Tile ID",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "-- Dashboard --"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Satellite Image Tile ID"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "green",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 3,
+        "x": 4,
+        "y": 0
+      },
+      "id": 5,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "/^Product$/",
+          "values": false
+        },
+        "text": {
+          "valueSize": 15
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "-- Dashboard --"
+          },
+          "panelId": 3,
+          "refId": "A"
+        }
+      ],
+      "title": "Product",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "-- Dashboard --"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Satellite Image Tile ID"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "green",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "SourceData_id"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "green",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 4,
+        "x": 7,
+        "y": 0
+      },
+      "id": 10,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "/^SourceData_id$/",
+          "values": false
+        },
+        "text": {
+          "valueSize": 15
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "-- Dashboard --"
+          },
+          "panelId": 3,
+          "refId": "A"
+        }
+      ],
+      "title": "Source Data ID",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "-- Dashboard --"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Satellite Image Tile ID"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "green",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "SourceData_id"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "green",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 9,
+        "x": 11,
+        "y": 0
+      },
+      "id": 6,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "/^Tile ID$/",
+          "values": false
+        },
+        "text": {
+          "valueSize": 15
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "-- Dashboard --"
+          },
+          "panelId": 3,
+          "refId": "A"
+        }
+      ],
+      "title": "Tile ID",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "bcea6400-c642-45aa-b5d3-2a922bb63129"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "blue",
+            "mode": "fixed"
+          },
+          "custom": {
+            "align": "center",
+            "cellOptions": {
+              "type": "color-text"
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "noValue": "Yet to Update",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "ID"
+            },
+            "properties": [
+              {
+                "id": "links",
+                "value": [
+                  {
+                    "title": "",
+                    "url": "/d/ce959ed8-f823-4655-91db-c7c32c08afeb/new-collection-request-23?orgId=1&var-current_new_collection_request=${__data.fields.ID}&refresh=15m"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 4,
+        "x": 20,
+        "y": 0
+      },
+      "id": 11,
+      "links": [],
+      "options": {
+        "cellHeight": "md",
+        "footer": {
+          "countRows": false,
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": false
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "postgres",
+            "uid": "bcea6400-c642-45aa-b5d3-2a922bb63129"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT \"ID\" FROM \"NewCollectionRequest\" join \"NewCollectionRequest_ImageTiles\" on \"NewCollectionRequest\".\"ID\"= \"NewCollectionRequest_ImageTiles\".\"newcollectionrequest_id\" \r\nwhere \"NewCollectionRequest_ImageTiles\".\"satelliteimagetile_id\" = $current_tile_id",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "title": "Go to New Collection",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "-- Dashboard --"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Satellite Image Tile ID"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "green",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "SourceData_id"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "green",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "To Be Downloaded"
+            },
+            "properties": [
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "options": {
+                      "false": {
+                        "color": "red",
+                        "index": 1,
+                        "text": "False"
+                      },
+                      "true": {
+                        "color": "green",
+                        "index": 0,
+                        "text": "True"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Is Downloaded"
+            },
+            "properties": [
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "options": {
+                      "false": {
+                        "color": "red",
+                        "index": 1,
+                        "text": "False"
+                      },
+                      "true": {
+                        "color": "green",
+                        "index": 0,
+                        "text": "True"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Is Extracted"
+            },
+            "properties": [
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "options": {
+                      "false": {
+                        "color": "red",
+                        "index": 1,
+                        "text": "False"
+                      },
+                      "true": {
+                        "color": "green",
+                        "index": 0,
+                        "text": "True"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Extracted Path"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "blue",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 12,
+        "x": 0,
+        "y": 2
+      },
+      "id": 7,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "/^Extracted Path$/",
+          "values": false
+        },
+        "text": {
+          "valueSize": 15
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "-- Dashboard --"
+          },
+          "panelId": 3,
+          "refId": "A"
+        }
+      ],
+      "title": " Extracted Path",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "-- Dashboard --"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Satellite Image Tile ID"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "green",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "SourceData_id"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "green",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "To Be Downloaded"
+            },
+            "properties": [
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "options": {
+                      "false": {
+                        "color": "red",
+                        "index": 1,
+                        "text": "False"
+                      },
+                      "true": {
+                        "color": "green",
+                        "index": 0,
+                        "text": "True"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 4,
+        "x": 12,
+        "y": 2
+      },
+      "id": 8,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "/^To Be Downloaded$/",
+          "values": false
+        },
+        "text": {
+          "valueSize": 15
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "-- Dashboard --"
+          },
+          "panelId": 3,
+          "refId": "A"
+        }
+      ],
+      "title": "To Be Downloaded",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "-- Dashboard --"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Satellite Image Tile ID"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "green",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "SourceData_id"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "green",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "To Be Downloaded"
+            },
+            "properties": [
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "options": {
+                      "false": {
+                        "color": "red",
+                        "index": 1,
+                        "text": "False"
+                      },
+                      "true": {
+                        "color": "green",
+                        "index": 0,
+                        "text": "True"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Is Downloaded"
+            },
+            "properties": [
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "options": {
+                      "false": {
+                        "color": "red",
+                        "index": 1,
+                        "text": "False"
+                      },
+                      "true": {
+                        "color": "green",
+                        "index": 0,
+                        "text": "True"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 4,
+        "x": 16,
+        "y": 2
+      },
+      "id": 9,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "/^To Be Downloaded$/",
+          "values": false
+        },
+        "text": {
+          "valueSize": 15
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "-- Dashboard --"
+          },
+          "panelId": 3,
+          "refId": "A"
+        }
+      ],
+      "title": " Download Status",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "-- Dashboard --"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Satellite Image Tile ID"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "green",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "SourceData_id"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "green",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "To Be Downloaded"
+            },
+            "properties": [
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "options": {
+                      "false": {
+                        "color": "red",
+                        "index": 1,
+                        "text": "False"
+                      },
+                      "true": {
+                        "color": "green",
+                        "index": 0,
+                        "text": "True"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Is Downloaded"
+            },
+            "properties": [
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "options": {
+                      "false": {
+                        "color": "red",
+                        "index": 1,
+                        "text": "False"
+                      },
+                      "true": {
+                        "color": "green",
+                        "index": 0,
+                        "text": "True"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Is Extracted"
+            },
+            "properties": [
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "options": {
+                      "false": {
+                        "color": "red",
+                        "index": 1,
+                        "text": "False"
+                      },
+                      "true": {
+                        "color": "green",
+                        "index": 0,
+                        "text": "True"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 4,
+        "x": 20,
+        "y": 3
+      },
+      "id": 12,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "/^Is Extracted$/",
+          "values": false
+        },
+        "text": {
+          "valueSize": 15
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "-- Dashboard --"
+          },
+          "panelId": 3,
+          "refId": "A"
+        }
+      ],
+      "title": " Extraction  Status",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "bcea6400-c642-45aa-b5d3-2a922bb63129"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "text",
+            "mode": "fixed"
+          },
+          "custom": {
+            "align": "left",
+            "cellOptions": {
+              "type": "color-text"
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "To Be Downloaded"
+            },
+            "properties": [
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "options": {
+                      "false": {
+                        "color": "red",
+                        "index": 1,
+                        "text": "False"
+                      },
+                      "true": {
+                        "color": "light-green",
+                        "index": 0,
+                        "text": "True"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ]
+              },
+              {
+                "id": "custom.width",
+                "value": 151
+              },
+              {
+                "id": "color",
+                "value": {
+                  "mode": "thresholds"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "SourceData_id"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 343
+              },
+              {
+                "id": "links",
+                "value": [
+                  {
+                    "title": "",
+                    "url": "/d/ba9b31d7-d60c-42ae-9660-0a6543c4b1f8/source-data?orgId=1&var-current_sdid=${__data.fields.SourceData_id}"
+                  }
+                ]
+              },
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "blue",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "Source Data ID"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Is Extracted"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 123
+              },
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "options": {
+                      "false": {
+                        "color": "red",
+                        "index": 1,
+                        "text": "False"
+                      },
+                      "true": {
+                        "color": "green",
+                        "index": 0,
+                        "text": "True"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "End Date"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 431
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Satellite Image Tile ID"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 248
+              },
+              {
+                "id": "links",
+                "value": []
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Is Downloaded"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 138
+              },
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "options": {
+                      "false": {
+                        "color": "red",
+                        "index": 1,
+                        "text": "False"
+                      },
+                      "true": {
+                        "color": "green",
+                        "index": 0,
+                        "text": "True"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Source Data ID"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 131
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "DL Attempts"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 125
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": " Start Time"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 180
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "End Time"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 193
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Satellite Image Tile ID"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 173
+              },
+              {
+                "id": "links",
+                "value": []
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 5
+      },
+      "id": 3,
+      "options": {
+        "cellHeight": "sm",
+        "footer": {
+          "countRows": false,
+          "enablePagination": true,
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true,
+        "sortBy": []
+      },
+      "pluginVersion": "10.1.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "postgres",
+            "uid": "bcea6400-c642-45aa-b5d3-2a922bb63129"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT distinct\r\n    \"SatProductCurator_satelliteimagetile\".\"id\" as \"Satellite Image Tile ID\",\r\n    \"SatProductCurator_satelliteimagetile\".\"Product\",\r\n    \"SatProductCurator_satelliteimagetile\".\"SourceData_id\",\r\n    \"SatProductCurator_satelliteimagetile\".\"tile_id\" as \"Tile ID\",\r\n    \"SatProductCurator_satelliteimagetile\".\"date\" as \"Date\",\r\n    \"SatProductCurator_satelliteimagetile\".\"to_be_downloaded\" as \"To Be Downloaded\",\r\n    \"SatProductCurator_satelliteimagetile\".\"is_downloaded\" as \"Is Downloaded\",\r\n    \"SatProductCurator_satelliteimagetile\".\"is_extracted\" as \"Is Extracted\",\r\n    \"SatProductCurator_satelliteimagetile\".\"dl_attempts\" as \"DL Attempts\",\r\n    \"SatProductCurator_satelliteimagetile\".\"dl_start_time\" as \" Start Time\",\r\n    \"SatProductCurator_satelliteimagetile\".\"dl_end_time\" as \"End Time\",\r\n    \"SatProductCurator_satelliteimagetile\".\"extracted_path\" as \"Extracted Path\",\r\n    \"SatProductCurator_satelliteimagetile\".\"eodag_data\" as \"EODAG Data\"\r\nFROM\r\n    \"SatProductCurator_satelliteimagetile\"\r\n   INNER JOIN \"NewCollectionRequest_ImageTiles\" ON (\r\n        \"SatProductCurator_satelliteimagetile\".\"id\" = \"NewCollectionRequest_ImageTiles\".\"satelliteimagetile_id\"\r\n    )\r\nWHERE\r\n    \"SatProductCurator_satelliteimagetile\".\"id\" = '$current_tile_id'",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [
+                  {
+                    "name": "\"ID\"",
+                    "type": "functionParameter"
+                  }
+                ],
+                "type": "function"
+              },
+              {
+                "parameters": [
+                  {
+                    "name": "\"StartDate\"",
+                    "type": "functionParameter"
+                  }
+                ],
+                "type": "function"
+              },
+              {
+                "parameters": [
+                  {
+                    "name": "\"EndDate\"",
+                    "type": "functionParameter"
+                  }
+                ],
+                "type": "function"
+              },
+              {
+                "parameters": [
+                  {
+                    "name": "\"IsSearchSuccessful\"",
+                    "type": "functionParameter"
+                  }
+                ],
+                "type": "function"
+              },
+              {
+                "parameters": [
+                  {
+                    "name": "\"IsCompleted\"",
+                    "type": "functionParameter"
+                  }
+                ],
+                "type": "function"
+              },
+              {
+                "parameters": [
+                  {
+                    "name": "\"IsIngested\"",
+                    "type": "functionParameter"
+                  }
+                ],
+                "type": "function"
+              },
+              {
+                "parameters": [
+                  {
+                    "name": "\"IsAccepted\"",
+                    "type": "functionParameter"
+                  }
+                ],
+                "type": "function"
+              },
+              {
+                "parameters": [
+                  {
+                    "name": "\"NewCollectionID\"",
+                    "type": "functionParameter"
+                  }
+                ],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          },
+          "table": "\"NewCollectionRequest\""
+        }
+      ],
+      "title": "Image Tiles",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "bcea6400-c642-45aa-b5d3-2a922bb63129"
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 24,
+        "x": 0,
+        "y": 12
+      },
+      "id": 13,
+      "options": {
+        "buttonGroup": {
+          "orientation": "center",
+          "size": "md"
+        },
+        "elements": [
+          {
+            "fieldName": "id",
+            "id": "id",
+            "labelWidth": 20,
+            "options": [],
+            "section": "",
+            "title": "ID",
+            "tooltip": "",
+            "type": "disabled",
+            "uid": "9920b568-c71d-41b8-91f1-4a8a1c934b9c",
+            "unit": "",
+            "value": ""
+          },
+          {
+            "id": "to_be_downloaded",
+            "labelWidth": 20,
+            "options": [
+              {
+                "id": "True",
+                "label": "True",
+                "type": "string",
+                "value": "True"
+              },
+              {
+                "id": "False",
+                "label": "False",
+                "type": "string",
+                "value": "False"
+              }
+            ],
+            "section": "",
+            "title": "To Be Downloaded",
+            "tooltip": "",
+            "type": "select",
+            "uid": "e8854a0a-c1c1-4c3f-8a99-854d255345ea",
+            "unit": "",
+            "value": ""
+          }
+        ],
+        "initial": {
+          "code": "const payload = {};\n\nelements.forEach((element) => {\n  if (!element.value) {\n    return;\n  }\n\n  payload[element.id] = element.value;\n});\n\nsetInitial(payload);",
+          "contentType": "application/json",
+          "datasource": "PostgreSQL-IADS",
+          "getPayload": "return {\n  rawSql: `SELECT\n    \"SatProductCurator_satelliteimagetile\".\"id\",\n    \"SatProductCurator_satelliteimagetile\".\"to_be_downloaded\"\nFROM\n    \"SatProductCurator_satelliteimagetile\"\n   INNER JOIN \"NewCollectionRequest_ImageTiles\" ON (\n        \"SatProductCurator_satelliteimagetile\".\"id\" = \"NewCollectionRequest_ImageTiles\".\"satelliteimagetile_id\"\n    )\nWHERE\n    \"SatProductCurator_satelliteimagetile\".\"id\" = '$current_tile_id'`,\n  format: 'table',\n}",
+          "highlight": true,
+          "highlightColor": "red",
+          "method": "datasource"
+        },
+        "layout": {
+          "orientation": "horizontal",
+          "padding": 10,
+          "variant": "single"
+        },
+        "reset": {
+          "backgroundColor": "purple",
+          "foregroundColor": "yellow",
+          "icon": "process",
+          "text": "Reset",
+          "variant": "hidden"
+        },
+        "resetAction": {
+          "code": "console.log(data, response, initial, elements);",
+          "mode": "initial"
+        },
+        "saveDefault": {
+          "icon": "save",
+          "text": "Save Default",
+          "variant": "hidden"
+        },
+        "submit": {
+          "backgroundColor": "purple",
+          "foregroundColor": "yellow",
+          "icon": "cloud-upload",
+          "text": "Submit",
+          "variant": "primary"
+        },
+        "update": {
+          "code": "if (response && response.ok) {\n  notifySuccess(['Update', 'Values updated successfully.']);\n  locationService.reload();\n} else {\n  notifyError(['Update', 'An error occured updating values.']);\n}",
+          "confirm": true,
+          "contentType": "application/json",
+          "datasource": "PostgreSQL-IADS",
+          "getPayload": "const payload = {};\n\nelements.forEach((element) => {\n  if (!element.value) {\n    return;\n  }\n\n  payload[element.id] = element.value;\n})\n\n/**\n * Data Source payload\n */\nreturn {\n  rawSql: `UPDATE \"SatProductCurator_satelliteimagetile\"\nSET \"id\" = ${payload.id !== undefined ? `'${payload.id}'` : 'null'},\n    \"to_be_downloaded\" = ${payload.to_be_downloaded !== undefined ? `'${payload.to_be_downloaded}'` : 'null'}\nFROM \"NewCollectionRequest_ImageTiles\"\nWHERE \"SatProductCurator_satelliteimagetile\".\"id\" = \"NewCollectionRequest_ImageTiles\".\"satelliteimagetile_id\"\n    AND \"SatProductCurator_satelliteimagetile\".\"id\" = '$current_tile_id';`,\n  format: 'table',\n};",
+          "method": "datasource",
+          "payloadMode": "custom"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "postgres",
+            "uid": "bcea6400-c642-45aa-b5d3-2a922bb63129"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT\r\n    \"SatProductCurator_satelliteimagetile\".\"id\" as \"Satellite Image Tile ID\",\r\n    \"SatProductCurator_satelliteimagetile\".\"to_be_downloaded\" as \"To Be Downloaded\"\r\nFROM\r\n    \"SatProductCurator_satelliteimagetile\"\r\n   INNER JOIN \"NewCollectionRequest_ImageTiles\" ON (\r\n        \"SatProductCurator_satelliteimagetile\".\"id\" = \"NewCollectionRequest_ImageTiles\".\"satelliteimagetile_id\"\r\n    )\r\nWHERE\r\n    \"SatProductCurator_satelliteimagetile\".\"id\" = '$current_tile_id'  ",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "title": "Download User Access",
+      "type": "volkovlabs-form-panel"
+    }
+  ],
+  "refresh": "15m",
+  "schemaVersion": 38,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "selected": false,
+          "text": "738",
+          "value": "738"
+        },
+        "datasource": {
+          "type": "postgres",
+          "uid": "bcea6400-c642-45aa-b5d3-2a922bb63129"
+        },
+        "definition": "SELECT satelliteimagetile_id  FROM \"NewCollectionRequest_ImageTiles\" where newcollectionrequest_id =$current_new_collection_request",
+        "hide": 0,
+        "includeAll": false,
+        "label": "current_tile_id",
+        "multi": false,
+        "name": "current_tile_id",
+        "options": [],
+        "query": "SELECT satelliteimagetile_id  FROM \"NewCollectionRequest_ImageTiles\" where newcollectionrequest_id =$current_new_collection_request",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 3,
+        "type": "query"
+      },
+      {
+        "current": {
+          "selected": false,
+          "text": "[[[73.111134441823, 17.990924820662], [74.147986270785, 17.998257549086], [74.143065777496, 18.990537867402], [73.100232339695, 18.982771612771], [73.111134441823, 17.990924820662]]]",
+          "value": "[[[73.111134441823, 17.990924820662], [74.147986270785, 17.998257549086], [74.143065777496, 18.990537867402], [73.100232339695, 18.982771612771], [73.111134441823, 17.990924820662]]]"
+        },
+        "datasource": {
+          "type": "postgres",
+          "uid": "bcea6400-c642-45aa-b5d3-2a922bb63129"
+        },
+        "definition": "WITH raw_coordinates AS (\n    SELECT\n        eodag_data->'geometry'->'coordinates' AS coords\n    FROM\n        \"SatProductCurator_satelliteimagetile\"\n    INNER JOIN\n        \"NewCollectionRequest_ImageTiles\"\n    ON\n        \"SatProductCurator_satelliteimagetile\".\"id\" = \"NewCollectionRequest_ImageTiles\".\"satelliteimagetile_id\"\n    WHERE\n        \"NewCollectionRequest_ImageTiles\".\"newcollectionrequest_id\" = '$current_new_collection_request'\n        AND \"SatProductCurator_satelliteimagetile\".\"id\" = '$current_tile_id'\n),\nflattened_coordinates AS (\n    SELECT\n        CASE\n            -- If coords is a nested array (e.g., [[[...]]]), unnest it one level\n            WHEN jsonb_typeof(coords) = 'array' AND jsonb_typeof(coords->0) = 'array' THEN coords->0\n            -- If coords is a single array (e.g., [[...]]), return it as is\n            WHEN jsonb_typeof(coords) = 'array' THEN coords\n            -- Default case (shouldn't happen with valid data)\n            ELSE jsonb_build_array(coords)\n        END AS normalized_coords\n    FROM raw_coordinates\n)\nSELECT\n    normalized_coords\nFROM flattened_coordinates;",
+        "hide": 0,
+        "includeAll": false,
+        "label": "polygon",
+        "multi": false,
+        "name": "polygon",
+        "options": [],
+        "query": "WITH raw_coordinates AS (\n    SELECT\n        eodag_data->'geometry'->'coordinates' AS coords\n    FROM\n        \"SatProductCurator_satelliteimagetile\"\n    INNER JOIN\n        \"NewCollectionRequest_ImageTiles\"\n    ON\n        \"SatProductCurator_satelliteimagetile\".\"id\" = \"NewCollectionRequest_ImageTiles\".\"satelliteimagetile_id\"\n    WHERE\n        \"NewCollectionRequest_ImageTiles\".\"newcollectionrequest_id\" = '$current_new_collection_request'\n        AND \"SatProductCurator_satelliteimagetile\".\"id\" = '$current_tile_id'\n),\nflattened_coordinates AS (\n    SELECT\n        CASE\n            -- If coords is a nested array (e.g., [[[...]]]), unnest it one level\n            WHEN jsonb_typeof(coords) = 'array' AND jsonb_typeof(coords->0) = 'array' THEN coords->0\n            -- If coords is a single array (e.g., [[...]]), return it as is\n            WHEN jsonb_typeof(coords) = 'array' THEN coords\n            -- Default case (shouldn't happen with valid data)\n            ELSE jsonb_build_array(coords)\n        END AS normalized_coords\n    FROM raw_coordinates\n)\nSELECT\n    normalized_coords\nFROM flattened_coordinates;",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "type": "query"
+      },
+      {
+        "current": {
+          "selected": false,
+          "text": "807\r\r",
+          "value": "807\r\r"
+        },
+        "datasource": {
+          "type": "postgres",
+          "uid": "bcea6400-c642-45aa-b5d3-2a922bb63129"
+        },
+        "definition": "SELECT DISTINCT\n    \"newcollectionrequest_id\"\nFROM\n    \"NewCollectionRequest_ImageTiles\"\nWHERE\n    \"satelliteimagetile_id\" IS NOT NULL;",
+        "hide": 0,
+        "includeAll": false,
+        "label": "current_new_collection_request",
+        "multi": false,
+        "name": "current_new_collection_request",
+        "options": [],
+        "query": "SELECT DISTINCT\n    \"newcollectionrequest_id\"\nFROM\n    \"NewCollectionRequest_ImageTiles\"\nWHERE\n    \"satelliteimagetile_id\" IS NOT NULL;",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 3,
+        "type": "query"
+      }
+    ]
+  },
+  "time": {
+    "from": "2023-03-17T04:01:50.178Z",
+    "to": "2024-07-08T12:09:27.452Z"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "Image Tiles",
+  "uid": "d981753a-ae59-4c35-aba8-c380b874f097",
+  "version": 60,
+  "weekStart": ""
+}
